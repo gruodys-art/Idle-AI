@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#f7f9ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#fffbff", "on-tertiary-fixed": "#321200", "on-tertiary": "#ffffff", "on-secondary-container": "#267243", "error-container": "#ffdad6", "primary-container": "#bc5625", "secondary-container": "#a6f4b9", "surface-container-high": "#d8eaff", "surface-container-low": "#edf4ff", "inverse-primary": "#ffb597", "primary-fixed-dim": "#ffb597", "tertiary": "#964400", "tertiary-container": "#b65c1c", "surface-dim": "#cadcf1", "surface-variant": "#d2e4f9", "on-error": "#ffffff", "surface": "#f7f9ff", "secondary-fixed-dim": "#8bd79e", "secondary-fixed": "#a6f4b9", "background": "#f7f9ff", "secondary": "#1e6c3d", "tertiary-fixed": "#ffdbc9", "on-secondary": "#ffffff", "outline-variant": "#ddc1b6", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "surface-bright": "#f7f9ff", "outline": "#8a7269", "on-surface": "#0b1d2c", "on-secondary-fixed-variant": "#005229", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "on-background": "#0b1d2c", "primary": "#9c3f0d", "tertiary-fixed-dim": "#ffb68c", "inverse-surface": "#213242", "surface-container": "#e3efff", "on-secondary-fixed": "#00210d", "on-surface-variant": "#56423a", "primary-fixed": "#ffdbcd", "on-primary-fixed-variant": "#7d2d00", "error": "#ba1a1a", "surface-container-highest": "#d2e4f9", "surface-tint": "#9f410f", "on-tertiary-fixed-variant": "#753400", "on-primary-fixed": "#360f00", "inverse-on-surface": "#e8f2ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-lg": "1.25rem", "space-md": "0.875rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "gutter": "1rem" }, fontFamily: { "headline-xl-mobile": ["Outfit"], "telemetry-xs": ["JetBrains Mono"], "telemetry-lg": ["JetBrains Mono"], "label-md": ["Outfit"], "body-sm": ["Outfit"], "headline-md": ["Outfit"], "telemetry-md": ["JetBrains Mono"], "headline-lg": ["Outfit"], "label-sm": ["Outfit"], "body-lg": ["Outfit"], "telemetry-sm": ["JetBrains Mono"], "headline-xl": ["Outfit"], "body-md": ["Outfit"], "headline-sm": ["Outfit"] }, fontSize: { "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "telemetry-xs": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "telemetry-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "telemetry-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "telemetry-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,29,44,0.04)]"><div class="h-24 px-space-md flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface uppercase">SPACEIDLE</span><span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-telemetry-xs text-telemetry-xs tracking-wider uppercase">PHASE 1: ASTEROID</span></div><div class="flex items-center gap-space-sm"><button aria-label="Overflow menu" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">more_vert</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-dim" src="https://lh3.googleusercontent.com/aida/AEtjO1X0be_m8cndFwnNmKUHR2jhH5PZk94GuKmfUPlb9Dk4RG9iFsTDFXMnSwqVf68aBqKlfL5Fx5tkvFk4Elb7ukHNVxqOJv0XnjOm4EKhlOQhahMQPbmh0yCVi7DKOgp0u7B6FpbCdhfuQQXCN2wIq7CmTzyJ4-NAniD7nMOp1JziCj6C39UB3c3DzsJtGRi0Tnn09z3PchFXnmqnaFfKPhx8_eR5nWlCaydFFqtS6s-pp_nhrm2Lohc1EQ4"/></div></div><div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded"><div class="flex items-center gap-space-xs font-telemetry-xs text-telemetry-xs text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span>T+14d 06:42:18</span></div><div class="flex items-center gap-space-xs font-telemetry-xs text-telemetry-xs text-on-surface"><span class="font-semibold">142.85 t</span><span class="text-secondary font-medium">+18.4 kg/s</span></div></div></div></header><main class="flex flex-col relative w-full pt-24 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-md py-space-md gap-space-lg">
+<!-- Operational Protocol Header Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-xs text-telemetry-xs uppercase tracking-wider text-primary font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+        S5.1 Operational Dossier
+      </span>
+<span class="font-telemetry-xs text-telemetry-xs bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant font-medium">
+        REV 84.1-A
+      </span>
+</div>
+<div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">
+        Faction Commission &amp; Allegiance Protocol
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Choose your sovereign charter to unlock specialized industrial doctrines, restricted deep-void tech trees, and sector orbital sovereignty.
+      </p>
+</div>
+<!-- Active Status Recessed Meter -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">Current Status</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">badge</span>
+          Unaligned Prospector
+        </span>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">Commission License</span>
+<span class="font-telemetry-sm text-telemetry-sm text-secondary font-medium">Sol-Uni Class-B (Field)</span>
+</div>
+</div>
+</section>
+<!-- Interactive Dual Factions Section -->
+<section class="flex flex-col gap-space-md">
+<!-- CARD 1: EMPIRE OF SOL -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col transition-all duration-200" id="card-empire">
+<!-- Faction Hero Banner -->
+<div class="relative h-32 w-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="A sprawling, high-precision imperial shipyard in orbit around Mars, with sleek copper-trimmed dreadnoughts, bright sun flare, crisp geometric space dock struts, cleanroom aerospace aesthetic, soft ambient atmospheric blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4bH1Q5fl8W5Jgn9W0ShkVrawv_aKiOt-CgGqosOKgjR5IKXiGMg6pViymwgo5HdzJ-80PmjVhpsVdBpD1_Y5WixcfBoBFpNQSOwqS8BYDCOdWOYXMMoyDnlA9zbqdisMgsAO1ac0h_wbZk5oeKR57LUViCP0_fKYBSJhcDS2CXEAwV_Z8vj5dx49V20wYDL7KVF43plbH1ClB9OJ58hpPEffmLHtxFBjOdP2kF9eHODVbEYHRmn8-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-surface-container-lowest tracking-widest uppercase drop-shadow font-bold">MINISTRY OF EXTRACTION</span>
+<span class="font-label-sm text-label-sm text-surface-container-lowest font-medium drop-shadow">Imperial Mandate S-09</span>
+</div>
+</div>
+<div class="absolute bottom-2 right-space-sm">
+<span class="bg-primary/90 backdrop-blur-sm text-on-primary font-telemetry-xs text-telemetry-xs px-2 py-0.5 rounded-full font-semibold">
+            ESTABLISHED HEGEMONY
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<div>
+<div class="flex items-baseline justify-between">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">The Empire of Sol</h2>
+<span class="font-telemetry-sm text-telemetry-sm text-primary font-semibold">SOVEREIGN V</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mt-0.5">
+            “Institutional Order, Subsidized Supply Chains, Imperial Hegemony.”
+          </p>
+</div>
+<!-- Metric Perks Grid -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-telemetry-xs text-telemetry-xs uppercase tracking-wider text-on-surface-variant font-semibold">
+            Standard Subsidies &amp; Royal Decrees
+          </span>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Rare Material Subsidies</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Boosted Titanium, Platinum, &amp; Uranium nodes</span>
+</div>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-secondary font-bold shrink-0 ml-2">+25.0%</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">precision_manufacturing</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">T4/T5 Heavy Industrial Drones</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Direct access to Sol Autonomous Blueprints</span>
+</div>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs bg-primary-fixed text-on-primary-fixed font-semibold px-1.5 py-0.5 rounded shrink-0 ml-2">UNLOCKED</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">warehouse</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Imperial Bulk Silos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Automated freight lines into Martian hubs</span>
+</div>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface font-semibold shrink-0 ml-2">+500.0 t</span>
+</div>
+</div>
+<!-- Trade-off / Cost Panel -->
+<div class="bg-error-container/40 rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-xs text-telemetry-xs font-bold text-error uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+              Imperial Bureaucratic Burden
+            </span>
+<span class="font-telemetry-xs text-telemetry-xs text-error font-semibold">-18.0% GROSS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">
+            Compulsory imperial extraction tithe deducted from all mass yield. Operators are subject to spontaneous regulatory cargo seizures.
+          </p>
+</div>
+<!-- Primary Dual-Strata Action Button -->
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary active:scale-[0.98] transition-all rounded-xl py-space-sm px-space-md flex flex-col items-center justify-center shadow-md" onclick="selectFaction('empire')">
+<span class="font-label-md text-label-md font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">draw</span>
+            Pledge Allegiance to the Empire
+          </span>
+<span class="font-telemetry-xs text-telemetry-xs text-primary-fixed-dim">
+            Immediate Grant: +12.0 t Refined Alloy • Sol Guild Seal
+          </span>
+</button>
+</div>
+</article>
+<!-- CARD 2: FREE OUTER BELT ALLIANCE -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col transition-all duration-200" id="card-rebels">
+<!-- Faction Hero Banner -->
+<div class="relative h-32 w-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="Rugged industrial mining colony carved into a dark porous hollow asteroid, neon teal work-lights, modified mining rigs, gritty modular habitats, soft mist, telemetry monitors glowing softly in daylight spectrum." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMSzK5p2SbXx5nXllpQ8ErFVGfYQWxE6-P34lPhZiaxlrW80nH7lON8-v64St7jjyemb64ZVpygUxqFTsv1B3ubzuHjrFDb8Ch46N2jc-W74ln81mN_-X69Izj5djKU4vpHaPVCmHVOJlJIJrEcnXBSa9MYoFDfJxFa4Wzh0gOo5jMEkRGtABxAlZOAw0fcZVPddRP6GKOPQxvoMAQbgeOa0E3EuzqF3KYPXmv14N6VwB6yb6idvne"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-surface-container-lowest tracking-widest uppercase drop-shadow font-bold">REBEL SYNDICATE COALITION</span>
+<span class="font-label-sm text-label-sm text-surface-container-lowest font-medium drop-shadow">Pallas Treaty Accord</span>
+</div>
+</div>
+<div class="absolute bottom-2 right-space-sm">
+<span class="bg-secondary/90 backdrop-blur-sm text-on-secondary font-telemetry-xs text-telemetry-xs px-2 py-0.5 rounded-full font-semibold">
+            DECENTRALIZED AUTONOMY
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<div>
+<div class="flex items-baseline justify-between">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">The Outer Belt Alliance</h2>
+<span class="font-telemetry-sm text-telemetry-sm text-secondary font-semibold">SYNDICATE VII</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mt-0.5">
+            “Zero Taxation, Worker Sovereignty, Planetary Reclamation.”
+          </p>
+</div>
+<!-- Metric Perks Grid -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-telemetry-xs text-telemetry-xs uppercase tracking-wider text-on-surface-variant font-semibold">
+            Sovereign Accord &amp; Grassroots Tech
+          </span>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">money_off</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Zero Imperial Taxation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">100% of all harvested mass stored in local reserve</span>
+</div>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-secondary font-bold shrink-0 ml-2">0.0% TAX</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[18px]">bolt</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Guerilla Overclocking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Direct thermal overrides bypass safety Governors</span>
+</div>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary font-bold shrink-0 ml-2">+30.0% VEL</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-on-surface text-[18px]">groups</span>
+<div class="flex flex-col truncate">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Terraforming Cooperatives</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Mutual pool for Ceres biosphere atmospheric generators</span>
+</div>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs bg-secondary-container text-on-secondary-container font-semibold px-1.5 py-0.5 rounded shrink-0 ml-2">SHARED</span>
+</div>
+</div>
+<!-- Trade-off / Cost Panel -->
+<div class="bg-surface-container-high rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-xs text-telemetry-xs font-bold text-on-surface uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">warning</span>
+              Syndicate Levy &amp; Hardware Strain
+            </span>
+<span class="font-telemetry-xs text-telemetry-xs text-tertiary font-semibold">15% FLEET DIVERTED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">
+            Rotational patrol duty against corporate raiders consumes carrier propulsion. High-tier chassis must be scavenged from the black market.
+          </p>
+</div>
+<!-- Secondary Action Button -->
+<button class="w-full bg-surface-container-highest hover:bg-surface-container-high text-on-surface active:scale-[0.98] transition-all rounded-xl py-space-sm px-space-md flex flex-col items-center justify-center shadow-sm" onclick="selectFaction('rebels')">
+<span class="font-label-md text-label-md font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">handshake</span>
+            Join the Outer Belt Syndicate
+          </span>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+            Immediate Grant: +4 Overclock Cores • Syndicate Comm ID
+          </span>
+</button>
+</div>
+</article>
+</section>
+<!-- Neutrality Option / Status Quo -->
+<section class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">explore</span>
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Maintain Independent Prospector Status</h3>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full font-medium">
+        STATUS QUO
+      </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Independent operators remain free of imperial taxation and defensive patrol rotations. However, non-aligned prospectors are ineligible for state subsidies, black-market overclocks, and collective orbital terraforming dividends.
+    </p>
+<button class="w-full bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded-lg py-2.5 px-space-md text-center transition-colors shadow-sm" onclick="selectFaction('neutral')">
+<span class="font-label-sm text-label-sm font-semibold">Remain Uncommitted (Phase 1 Baseline)</span>
+</button>
+</section>
+<!-- Clan & Multiplayer Preview (S4.4) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">group_work</span>
+        Multiplayer Fleet Cooperative
+      </span>
+<span class="font-telemetry-xs text-telemetry-xs text-primary font-bold">PREVIEW S4.4</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant font-bold font-telemetry-md">
+        #01
+      </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">[UNCLANED] Solo Prospector</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] truncate">Guild formation requires Phase 2 Lunar Gateway clearance</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="bg-surface-container-low p-2 rounded flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">Shared Hangar</span>
+<span class="font-telemetry-sm text-telemetry-sm font-semibold text-on-surface">0 / 8 Slots</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">Co-op Yield</span>
+<span class="font-telemetry-sm text-telemetry-sm font-semibold text-secondary">+0.00 kg/s</span>
+</div>
+</div>
+</section>
+<!-- Protocol Cooldown Warning Banner (S5.4) -->
+<aside class="bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">notification_important</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wide">
+        Notice: Protocol S5.4 Re-commissioning Restrictions
+      </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Pledging allegiance binds your mining frequency to planetary communications grids. Switching allegiances later incurs an irrevocable <strong class="text-on-surface font-semibold">90-day cooldown</strong>, a <strong class="text-error font-semibold">50.0 t refined mass forfeit</strong>, and immediate loss of sector station dock permits.
+      </p>
+</div>
+</aside>
+<!-- Confirmation Modal (Dynamic Micro-Interaction) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="allegiance-modal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl p-space-lg w-full max-w-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full flex items-center justify-center" id="modal-icon-bg">
+<span class="material-symbols-outlined text-[24px]" id="modal-icon">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">Commission Terminal</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="modal-title">Confirm Allegiance</h4>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modal-desc">
+        Are you prepared to ratify this charter and apply telemetry parameters across all automated drone carriers?
+      </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1">
+<div class="flex justify-between font-telemetry-xs text-telemetry-xs">
+<span class="text-on-surface-variant">COMMISSION COST:</span>
+<span class="font-bold text-on-surface">0.00 t (Initial)</span>
+</div>
+<div class="flex justify-between font-telemetry-xs text-telemetry-xs">
+<span class="text-on-surface-variant">STATUS:</span>
+<span class="font-bold text-secondary">READY TO BROADCAST</span>
+</div>
+</div>
+<div class="flex gap-space-sm pt-1">
+<button class="flex-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md py-2.5 rounded-lg transition-colors" onclick="closeModal()">
+          Abort
+        </button>
+<button class="flex-1 text-on-primary font-label-md text-label-md py-2.5 rounded-lg shadow-sm transition-transform active:scale-95" id="modal-confirm-btn" onclick="executePledge()">
+          Ratify Charter
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let targetFaction = null;
+
+  function selectFaction(factionKey) {
+    targetFaction = factionKey;
+    const modal = document.getElementById('allegiance-modal');
+    const title = document.getElementById('modal-title');
+    const desc = document.getElementById('modal-desc');
+    const icon = document.getElementById('modal-icon');
+    const iconBg = document.getElementById('modal-icon-bg');
+    const confirmBtn = document.getElementById('modal-confirm-btn');
+
+    if (factionKey === 'empire') {
+      title.innerText = 'Pledge: Empire of Sol';
+      desc.innerText = 'Ratify Sol extraction quotas, unlock Tier 4 heavy industrial drone blueprints, and authorize the 18% Imperial tribute withholding.';
+      icon.innerText = 'wb_sunny';
+      iconBg.className = 'w-10 h-10 rounded-full flex items-center justify-center bg-primary text-on-primary';
+      confirmBtn.className = 'flex-1 bg-primary text-on-primary font-label-md text-label-md py-2.5 rounded-lg shadow-sm';
+    } else if (factionKey === 'rebels') {
+      title.innerText = 'Pledge: Outer Belt Alliance';
+      desc.innerText = 'Abolish resource taxation, engage overclocked extraction firmware, and commit 15% fleet power toward perimeter cooperative protection.';
+      icon.innerText = 'hub';
+      iconBg.className = 'w-10 h-10 rounded-full flex items-center justify-center bg-secondary text-on-secondary';
+      confirmBtn.className = 'flex-1 bg-secondary text-on-secondary font-label-md text-label-md py-2.5 rounded-lg shadow-sm';
+    } else {
+      title.innerText = 'Maintain Independence';
+      desc.innerText = 'Continue operation under an unaligned commercial prospector license with default standard baseline metrics.';
+      icon.innerText = 'explore';
+      iconBg.className = 'w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-highest text-on-surface';
+      confirmBtn.className = 'flex-1 bg-on-surface text-surface font-label-md text-label-md py-2.5 rounded-lg shadow-sm';
+    }
+
+    modal.classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('allegiance-modal').classList.add('hidden');
+    targetFaction = null;
+  }
+
+  function executePledge() {
+    const confirmBtn = document.getElementById('modal-confirm-btn');
+    confirmBtn.innerText = 'Transmitting...';
+    setTimeout(() => {
+      closeModal();
+      confirmBtn.innerText = 'Ratify Charter';
+    }, 600);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,29,44,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="command-deck" href="#"><span class="material-symbols-outlined">token</span><span class="font-label-sm text-label-sm uppercase">Deck</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="survey-operations" href="#"><span class="material-symbols-outlined">radar</span><span class="font-label-sm text-label-sm uppercase">Survey</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="fleet-fabrication" href="#"><span class="material-symbols-outlined">precision_manufacturing</span><span class="font-label-sm text-label-sm uppercase">Fleet</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="terraform-satellite" href="#"><span class="material-symbols-outlined">globe_uk</span><span class="font-label-sm text-label-sm uppercase">Terraform</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-primary font-semibold" data-path="faction-allegiance" href="#"><span class="material-symbols-outlined">shield_with_heart</span><span class="font-label-sm text-label-sm uppercase">Faction</span></a></div></nav></body></html>

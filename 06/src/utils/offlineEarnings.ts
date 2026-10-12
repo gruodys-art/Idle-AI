@@ -1,0 +1,147 @@
+import { GameState, calculateOfflineEarnings, Resources, getAvailableReinforcementTypes } from '../store/gameSlice';
+
+/**
+ * Determine if a unit type is an Infantry unit (should have higher weight)
+ */
+function isInfantryUnit(type: string): boolean {
+  const lowerType = type.toLowerCase();
+  return lowerType.includes('guardsman') || 
+         lowerType.includes('trooper') || 
+         lowerType.includes('grenadier') ||
+         lowerType.includes('bayonet fighter') ||
+         lowerType.includes('close combat specialist') ||
+         (lowerType.includes('sniper') && !lowerType.includes('scout') && !lowerType.includes('ratling'));
+}
+
+/**
+ * Determine if a unit type is a Scout unit (should have lower weight)
+ */
+function isScoutUnit(type: string): boolean {
+  const lowerType = type.toLowerCase();
+  return lowerType.includes('scout') || 
+         lowerType.includes('pathfinder') || 
+         lowerType.includes('observer') ||
+         lowerType.includes('infiltrator') ||
+         lowerType.includes('saboteur') ||
+         lowerType.includes('reconnaissance');
+}
+
+/**
+ * Get weighted random reinforcement type
+ * Infantry units have 10x weight compared to scouts
+ */
+function getWeightedRandomType(availableTypes: string[]): string {
+  // Build weighted array: Infantry = 10, Scouts = 1, Others = 1
+  const weightedArray: string[] = [];
+  
+  for (const type of availableTypes) {
+    if (isInfantryUnit(type)) {
+      // Add infantry 10 times
+      for (let i = 0; i < 10; i++) {
+        weightedArray.push(type);
+      }
+    } else if (isScoutUnit(type)) {
+      // Add scout once
+      weightedArray.push(type);
+    } else {
+      // Add other units once
+      weightedArray.push(type);
+    }
+  }
+  
+  // Randomly select from weighted array
+  return weightedArray[Math.floor(Math.random() * weightedArray.length)];
+}
+
+const BASE_RATES = {
+  credits: 100,
+  munitions: 50,
+  promethium: 25,
+};
+
+/**
+ * Calculate offline earnings based on time away and player rank
+ */
+export function calculateOfflineEarningsForState(
+  savedState: GameState,
+  currentTime: number
+): Resources {
+  if (!savedState.player || !savedState.sessionInfo) {
+    return {
+      credits: 0,
+      munitions: 0,
+      promethium: 0,
+      rawMaterials: 0,
+      imperialFavor: 0,
+    };
+  }
+
+  const timeAway = currentTime - savedState.sessionInfo.lastActiveTime;
+  
+  // Only calculate if player was away for at least 1 minute
+  const MIN_OFFLINE_TIME = 60 * 1000;
+  if (timeAway < MIN_OFFLINE_TIME) {
+    return {
+      credits: 0,
+      munitions: 0,
+      promethium: 0,
+      rawMaterials: 0,
+      imperialFavor: 0,
+    };
+  }
+
+  return calculateOfflineEarnings(savedState.player.rank, timeAway, BASE_RATES);
+}
+
+/**
+ * Calculate how many reinforcements should have arrived offline
+ */
+export function calculateOfflineReinforcements(
+  lastReinforcementTime: number,
+  currentTime: number
+): number {
+  const REINFORCEMENT_INTERVAL = 5000; // 5 seconds
+  const timeAway = currentTime - lastReinforcementTime;
+  
+  if (timeAway < REINFORCEMENT_INTERVAL) {
+    return 0;
+  }
+  
+  return Math.floor(timeAway / REINFORCEMENT_INTERVAL);
+}
+
+/**
+ * Generate offline reinforcements and track them by type
+ * This simulates what would have been generated offline
+ * Uses rank-based filtering to determine available types
+ */
+export function generateOfflineReinforcementsByType(
+  count: number,
+  rank: number
+): Map<string, { count: number; totalUnits: number }> {
+  const byType = new Map<string, { count: number; totalUnits: number }>();
+  
+  // Get available types based on rank
+  const availableTypes = getAvailableReinforcementTypes(rank);
+  
+  // Helper to get random element
+  const getRandomElement = <T,>(array: T[]): T => {
+    return array[Math.floor(Math.random() * array.length)];
+  };
+  
+  for (let i = 0; i < count; i++) {
+    // Use weighted random selection (Infantry 10x more likely than Scouts)
+    const type = getWeightedRandomType(availableTypes);
+    const unitCount = Math.floor(Math.random() * 10) + 1;
+    
+    const existing = byType.get(type);
+    if (existing) {
+      existing.count += 1;
+      existing.totalUnits += unitCount;
+    } else {
+      byType.set(type, { count: 1, totalUnits: unitCount });
+    }
+  }
+  
+  return byType;
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#f7f9ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#fffbff", "on-tertiary-fixed": "#321200", "on-tertiary": "#ffffff", "on-secondary-container": "#267243", "error-container": "#ffdad6", "primary-container": "#bc5625", "secondary-container": "#a6f4b9", "surface-container-high": "#d8eaff", "surface-container-low": "#edf4ff", "inverse-primary": "#ffb597", "primary-fixed-dim": "#ffb597", "tertiary": "#964400", "tertiary-container": "#b65c1c", "surface-dim": "#cadcf1", "surface-variant": "#d2e4f9", "on-error": "#ffffff", "surface": "#f7f9ff", "secondary-fixed-dim": "#8bd79e", "secondary-fixed": "#a6f4b9", "background": "#f7f9ff", "secondary": "#1e6c3d", "tertiary-fixed": "#ffdbc9", "on-secondary": "#ffffff", "outline-variant": "#ddc1b6", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "surface-bright": "#f7f9ff", "outline": "#8a7269", "on-surface": "#0b1d2c", "on-secondary-fixed-variant": "#005229", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "on-background": "#0b1d2c", "primary": "#9c3f0d", "tertiary-fixed-dim": "#ffb68c", "inverse-surface": "#213242", "surface-container": "#e3efff", "on-secondary-fixed": "#00210d", "on-surface-variant": "#56423a", "primary-fixed": "#ffdbcd", "on-primary-fixed-variant": "#7d2d00", "error": "#ba1a1a", "surface-container-highest": "#d2e4f9", "surface-tint": "#9f410f", "on-tertiary-fixed-variant": "#753400", "on-primary-fixed": "#360f00", "inverse-on-surface": "#e8f2ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-lg": "1.25rem", "space-md": "0.875rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "gutter": "1rem" }, fontFamily: { "headline-xl-mobile": ["Outfit"], "telemetry-xs": ["JetBrains Mono"], "telemetry-lg": ["JetBrains Mono"], "label-md": ["Outfit"], "body-sm": ["Outfit"], "headline-md": ["Outfit"], "telemetry-md": ["JetBrains Mono"], "headline-lg": ["Outfit"], "label-sm": ["Outfit"], "body-lg": ["Outfit"], "telemetry-sm": ["JetBrains Mono"], "headline-xl": ["Outfit"], "body-md": ["Outfit"], "headline-sm": ["Outfit"] }, fontSize: { "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "telemetry-xs": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "telemetry-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "telemetry-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "telemetry-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,29,44,0.04)]"><div class="h-24 px-space-md flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface uppercase">SPACEIDLE</span><span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-telemetry-xs text-telemetry-xs tracking-wider uppercase">PHASE 1: ASTEROID</span></div><div class="flex items-center gap-space-sm"><button aria-label="Overflow menu" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">more_vert</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-dim" src="https://lh3.googleusercontent.com/aida/AEtjO1X0be_m8cndFwnNmKUHR2jhH5PZk94GuKmfUPlb9Dk4RG9iFsTDFXMnSwqVf68aBqKlfL5Fx5tkvFk4Elb7ukHNVxqOJv0XnjOm4EKhlOQhahMQPbmh0yCVi7DKOgp0u7B6FpbCdhfuQQXCN2wIq7CmTzyJ4-NAniD7nMOp1JziCj6C39UB3c3DzsJtGRi0Tnn09z3PchFXnmqnaFfKPhx8_eR5nWlCaydFFqtS6s-pp_nhrm2Lohc1EQ4"/></div></div><div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded"><div class="flex items-center gap-space-xs font-telemetry-xs text-telemetry-xs text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span>T+14d 06:42:18</span></div><div class="flex items-center gap-space-xs font-telemetry-xs text-telemetry-xs text-on-surface"><span class="font-semibold">142.85 t</span><span class="text-secondary font-medium">+18.4 kg/s</span></div></div></div></header><main class="flex flex-col relative w-full pt-24 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Active Tab Highlight Override Script for Shell Nav -->
+<script>
+    (function() {
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'terraform-satellite') {
+          link.classList.remove('text-on-surface-variant');
+          link.classList.add('text-primary', 'font-semibold');
+        } else {
+          link.classList.remove('text-primary', 'font-semibold');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+    })();
+  </script>
+<!-- Interactive State Engine -->
+<script>
+    window.toggleProject = function(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.classList.toggle('hidden');
+    };
+
+    window.triggerVaporPulse = function(btn) {
+      const originalText = btn.innerHTML;
+      btn.disabled = true;
+      btn.classList.add('opacity-75');
+      btn.innerHTML = `<span class="flex items-center justify-center gap-space-xs font-label-md text-label-md"><span class="material-symbols-outlined text-sm animate-spin">sync</span><span>AUTHORIZING ORBITAL MIRROR...</span></span>`;
+      setTimeout(() => {
+        btn.innerHTML = `<span class="flex items-center justify-center gap-space-xs font-label-md text-label-md text-secondary"><span class="material-symbols-outlined text-sm">check_circle</span><span>STAGE II CONSTRUCTING</span></span>`;
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+          btn.classList.remove('opacity-75');
+        }, 3200);
+      }, 1400);
+    };
+  </script>
+<div class="px-space-md py-space-sm flex flex-col gap-space-md">
+<!-- Operational State Banner -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-xs rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-semibold uppercase tracking-wider">GEO-ENGINEERING SYNC ACTIVE</span>
+</div>
+<div class="flex items-center gap-space-xs font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span>SOLAR FLUX:</span>
+<span class="font-semibold text-on-surface">318 W/m²</span>
+</div>
+</div>
+<!-- 1. Target Celestial Body Card -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Visual Specimen Banner -->
+<div class="relative w-full h-36 bg-surface-container overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Photorealistic telephoto orbital observation of Aurelia IV-b, a frozen cratered ice moon with brilliant crystalline frost plains, subtle atmospheric vapor geysers against the soft pale blue cloud tops of massive gas giant Aurelia IV in crisp scientific laboratory daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-ZCsvod_6_3XFufbPLF8YZ-OIxFDoCfmne55_-5r6UDvhXK8vQwhybrVlJ3mkDd9SnF4tNCZCY0pwYhrsWbCNRT9ggz69X2I4Id28wDgTAyE-8QgXnagQgk7rEI37NFZsLFznhy-qE1Xyz0plAkBKWr6BP5FB9F_c6bVM8yNAyanxXOn6s9frg1I0T4ZymSGPQ_U4ZlX8FuXFuCQ0RJfYEa1KstAVbT3UZrhHkDCUbE0aZz_gsg1_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-0.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">public</span>
+<span class="font-telemetry-xs text-telemetry-xs font-semibold text-on-surface tracking-wider uppercase">ORBITAL TARGET S3.1</span>
+</div>
+<div class="absolute top-space-sm right-space-sm bg-surface-container-high/90 backdrop-blur-md px-space-sm py-0.5 rounded-full text-on-surface font-telemetry-xs text-telemetry-xs">
+          ID: 994-AURELIA
+        </div>
+</div>
+<!-- Identity & Metadata -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">SATELLITE MOON: AURELIA IV-b</h2>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-telemetry-xs text-telemetry-xs font-semibold uppercase">SECTOR STABLE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Captured Cryo-Satellite · Parent: Gas Giant Aurelia IV</p>
+</div>
+<!-- Telemetry Matrix Grid -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<!-- Mass -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">ACCESSIBLE MASS</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-telemetry-lg text-telemetry-lg font-bold text-on-surface">4.82</span>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">Gt</span>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-medium">99.1% Primordial Ice</span>
+</div>
+<!-- Gravity & Surface Temp -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">GRAV / TEMP</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-telemetry-lg text-telemetry-lg font-bold text-on-surface">0.18</span>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">g</span>
+<span class="text-outline-variant font-telemetry-xs">|</span>
+<span class="font-telemetry-md text-telemetry-md font-bold text-primary">78 K</span>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">-195.15 °C Nominal</span>
+</div>
+<!-- Pressure -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">SURFACE PRESSURE</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-telemetry-lg text-telemetry-lg font-bold text-on-surface">0.038</span>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">bar</span>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-primary font-medium">Base: 0.0000 bar (Trace)</span>
+</div>
+<!-- Albedo -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase">OPTICAL ALBEDO</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-telemetry-lg text-telemetry-lg font-bold text-on-surface">0.62</span>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">α</span>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">Silicate &amp; Water Frost</span>
+</div>
+</div>
+<!-- Stockpile Feed Drawer -->
+<div class="mt-space-xs bg-surface-container p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Water Ice Stockpile Feed</span>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">Cooling loops &amp; atmospheric injectors</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-telemetry-md text-telemetry-md font-bold text-error">-140.0 kg/s</span>
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-medium">Reserve: 840.4 kt</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Terraforming Staged Board -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">stacked_line_chart</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">TERRAFORMING STAGES</h3>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs bg-surface-container-high px-space-sm py-0.5 rounded-full text-on-surface font-semibold">PHASE 3: TARGETED</span>
+</div>
+<!-- Stage 1: Active -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-telemetry-xs text-telemetry-xs flex items-center justify-center font-bold">1</span>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold uppercase">Volatile Import &amp; Sublimation</h4>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-telemetry-xs text-telemetry-xs font-bold uppercase animate-pulse">74.2% ACTIVE</span>
+</div>
+<!-- Telemetry Details -->
+<div class="flex items-center justify-between pt-space-xs font-telemetry-xs text-telemetry-xs">
+<span class="text-on-surface-variant">PRESSURE: <strong class="text-on-surface">0.038 bar</strong> / 0.200 bar</span>
+<span class="text-secondary font-semibold">+14.2 kg/s vapor</span>
+</div>
+<!-- Progress Bar Container -->
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden my-space-xs">
+<div class="h-full bg-primary rounded-full transition-all duration-500" style="width: 74.2%;"></div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low p-space-xs rounded font-telemetry-xs text-telemetry-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">bolt</span>
+<span>Sink: <strong>12.4 MW</strong></span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-medium truncate">
+<span class="material-symbols-outlined text-sm">shield</span>
+<span>Freeze risk: Low</span>
+</div>
+</div>
+</div>
+<!-- Stage 2: In Progress -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-tertiary-container text-on-tertiary-container font-telemetry-xs text-telemetry-xs flex items-center justify-center font-bold">2</span>
+<h4 class="font-label-md text-label-md text-on-surface font-semibold uppercase">Greenhouse Heating &amp; Mirrors</h4>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-telemetry-xs text-telemetry-xs font-bold uppercase">32.0% IN RUN</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-telemetry-xs text-telemetry-xs">
+<span class="text-on-surface-variant">TEMP: <strong class="text-primary">142 K (-131 °C)</strong> / 278 K (+5 °C)</span>
+<span class="text-secondary font-semibold">+0.8 K / cycle</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden my-space-xs">
+<div class="h-full bg-tertiary rounded-full transition-all duration-500" style="width: 32.0%;"></div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-space-xs rounded font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span>Radiator Heat Absorption: Nominal</span>
+<span class="text-on-surface font-semibold">Flux Amplification 1.84x</span>
+</div>
+</div>
+<!-- Stage 3: Locked -->
+<div class="bg-surface-container-low/70 p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between opacity-80">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-variant text-on-surface-variant font-telemetry-xs text-telemetry-xs flex items-center justify-center font-bold">3</span>
+<h4 class="font-label-md text-label-md text-on-surface-variant font-semibold uppercase">Hydrology &amp; Surface Oceans</h4>
+</div>
+<span class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-outline font-semibold uppercase">
+<span class="material-symbols-outlined text-xs">lock</span> LOCKED
+          </span>
+</div>
+<p class="font-telemetry-xs text-telemetry-xs text-on-surface-variant italic">Prerequisite unmet: Requires Mean Surface Temperature &gt; 273.15 K (+0 °C) to stabilize liquid hydrosphere.</p>
+</div>
+<!-- Stage 4: Locked -->
+<div class="bg-surface-container-low/70 p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between opacity-80">
+<div class="flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-variant text-on-surface-variant font-telemetry-xs text-telemetry-xs flex items-center justify-center font-bold">4</span>
+<h4 class="font-label-md text-label-md text-on-surface-variant font-semibold uppercase">UV Shielding &amp; Magnetic Tether</h4>
+</div>
+<span class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-outline font-semibold uppercase">
+<span class="material-symbols-outlined text-xs">lock</span> LOCKED
+          </span>
+</div>
+<p class="font-telemetry-xs text-telemetry-xs text-on-surface-variant italic">Prerequisite unmet: Requires 0.500 bar Atmospheric Density &amp; 12.0 kt Refined Titanium alloy stocks.</p>
+</div>
+</section>
+<!-- 3. Planetary Engineering Megaprojects -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">PLANETARY MEGAPROJECTS</h3>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant font-semibold">3 ALLOCATED</span>
+</div>
+<!-- Project 1: Two-line Action High Impact -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold">Orbital Sunshade &amp; Focusing Mirror</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-telemetry-xs text-telemetry-xs font-semibold">STG-2</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">L1 Lagrange positioning focusing stellar rays on Aurelia's polar caps</span>
+</div>
+</div>
+<!-- BOM Material Pill Badges -->
+<div class="flex flex-wrap gap-space-xs">
+<span class="bg-surface-container-low px-space-xs py-1 rounded text-on-surface font-telemetry-xs text-telemetry-xs font-semibold">850 t Fe</span>
+<span class="bg-surface-container-low px-space-xs py-1 rounded text-on-surface font-telemetry-xs text-telemetry-xs font-semibold">240 t Ni</span>
+<span class="bg-surface-container-low px-space-xs py-1 rounded text-on-surface font-telemetry-xs text-telemetry-xs font-semibold">120 t Cu</span>
+<span class="bg-surface-container-high px-space-xs py-1 rounded text-primary font-telemetry-xs text-telemetry-xs font-semibold">Upkeep: 15.0 kg/s Gas</span>
+</div>
+<!-- Two-Line Action Button -->
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary p-space-sm rounded-lg flex flex-col items-center justify-center transition-transform active:scale-[0.99] shadow-sm" onclick="triggerVaporPulse(this)">
+<span class="font-label-md text-label-md font-semibold tracking-wide">AUTHORIZE CONSTRUCTION (STAGE II)</span>
+<span class="font-telemetry-xs text-telemetry-xs text-primary-fixed tracking-wider">FAB DURATION: 04h 30m 00s · AUTO-SYNCED</span>
+</button>
+</div>
+<!-- Project 2: Volatile Kinetic Impact Driver -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">rocket_launch</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Volatile Kinetic Impact Driver</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-telemetry-xs text-telemetry-xs font-semibold">ONLINE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Steers captured ice-rich outer asteroids into controlled polar deceleration burn.</p>
+<div class="bg-surface-container-low px-space-sm py-space-xs rounded flex items-center justify-between font-telemetry-xs text-telemetry-xs mt-space-xs">
+<span class="text-on-surface-variant">DELIVERY RATE:</span>
+<span class="font-semibold text-secondary">+2.4 kt Water Ice / Earth Day</span>
+</div>
+</div>
+<!-- Project 3: Atmospheric Gas Injector Plant #1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">heat_pump</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Atmospheric Gas Injector #1</span>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">Current: Tier 2 Superheated Vent Array</span>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-variant text-on-surface px-space-sm py-space-xs rounded flex flex-col items-end transition-colors" onclick="this.classList.add('bg-secondary-container', 'text-on-secondary-container')">
+<span class="font-label-sm text-label-sm font-semibold">UPGRADE LV 3</span>
+<span class="font-telemetry-xs text-telemetry-xs text-primary font-bold">+8.4 kg/s Vapor</span>
+</button>
+</div>
+</section>
+<!-- 4. Regional Biome Sector Grid Preview (Phase 4 Clan Preview) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">grid_view</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">REGIONAL BIOME SECTORS</h3>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs bg-surface-container-high px-space-sm py-0.5 rounded-full text-on-surface font-semibold">PHASE 4 COLONY</span>
+</div>
+<!-- 2x2 Tactical Grid Preview -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Sector Alpha -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between h-36 relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">SECTOR ALPHA</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase font-semibold">Equatorial Basin</span>
+<span class="font-body-sm text-body-sm text-on-surface">Sublimating Frosts</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low px-space-xs py-1 rounded font-telemetry-xs text-telemetry-xs">
+<span class="text-on-surface-variant">Habitability</span>
+<span class="font-bold text-primary">4%</span>
+</div>
+</div>
+<!-- Sector Beta -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between h-36 relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">SECTOR BETA</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase font-semibold">Impact Crater Sea</span>
+<span class="font-body-sm text-body-sm text-on-surface">Crystalline Ice Sheet</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low px-space-xs py-1 rounded font-telemetry-xs text-telemetry-xs">
+<span class="text-on-surface-variant">Habitability</span>
+<span class="font-bold text-on-surface-variant">0%</span>
+</div>
+</div>
+<!-- Sector Gamma -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between h-36 relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">SECTOR GAMMA</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant uppercase font-semibold">Polar Cap</span>
+<span class="font-body-sm text-body-sm text-on-surface">Deep Dry Ice Glacier</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low px-space-xs py-1 rounded font-telemetry-xs text-telemetry-xs">
+<span class="text-on-surface-variant">Habitability</span>
+<span class="font-bold text-on-surface-variant">0%</span>
+</div>
+</div>
+<!-- Sector Delta -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-md flex flex-col justify-between h-36 relative overflow-hidden ring-0">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary">SECTOR DELTA</span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-semibold uppercase">Base Camp Alpha</span>
+<span class="font-body-sm text-body-sm text-on-surface">Pressurized Dome</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-secondary-container px-space-xs py-1 rounded font-telemetry-xs text-telemetry-xs">
+<span class="text-on-secondary-container font-medium">Habitability</span>
+<span class="font-bold text-on-secondary-container">98%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Laboratory Telemetry Log Strip -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span>ATMOSPHERIC STABILITY TELEMETRY</span>
+<span class="text-secondary font-semibold">DELTA +0.002 bar/hr</span>
+</div>
+<div class="font-telemetry-xs text-telemetry-xs text-on-surface-variant flex items-center gap-space-xs">
+<span class="text-primary font-bold">[RAD-CHECK]</span>
+<span>Aurelia magnetosphere clearance: 1.4 Gauss · Nominal safe envelope</span>
+</div>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,29,44,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="command-deck" href="#"><span class="material-symbols-outlined">token</span><span class="font-label-sm text-label-sm uppercase">Deck</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="survey-operations" href="#"><span class="material-symbols-outlined">radar</span><span class="font-label-sm text-label-sm uppercase">Survey</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="fleet-fabrication" href="#"><span class="material-symbols-outlined">precision_manufacturing</span><span class="font-label-sm text-label-sm uppercase">Fleet</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-primary font-semibold" data-path="terraform-satellite" href="#"><span class="material-symbols-outlined">globe_uk</span><span class="font-label-sm text-label-sm uppercase">Terraform</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="faction-allegiance" href="#"><span class="material-symbols-outlined">shield_with_heart</span><span class="font-label-sm text-label-sm uppercase">Faction</span></a></div></nav></body></html>

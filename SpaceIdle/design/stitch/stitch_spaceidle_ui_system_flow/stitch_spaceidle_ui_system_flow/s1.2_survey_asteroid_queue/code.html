@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#f7f9ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#fffbff", "on-tertiary-fixed": "#321200", "on-tertiary": "#ffffff", "on-secondary-container": "#267243", "error-container": "#ffdad6", "primary-container": "#bc5625", "secondary-container": "#a6f4b9", "surface-container-high": "#d8eaff", "surface-container-low": "#edf4ff", "inverse-primary": "#ffb597", "primary-fixed-dim": "#ffb597", "tertiary": "#964400", "tertiary-container": "#b65c1c", "surface-dim": "#cadcf1", "surface-variant": "#d2e4f9", "on-error": "#ffffff", "surface": "#f7f9ff", "secondary-fixed-dim": "#8bd79e", "secondary-fixed": "#a6f4b9", "background": "#f7f9ff", "secondary": "#1e6c3d", "tertiary-fixed": "#ffdbc9", "on-secondary": "#ffffff", "outline-variant": "#ddc1b6", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "surface-bright": "#f7f9ff", "outline": "#8a7269", "on-surface": "#0b1d2c", "on-secondary-fixed-variant": "#005229", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "on-background": "#0b1d2c", "primary": "#9c3f0d", "tertiary-fixed-dim": "#ffb68c", "inverse-surface": "#213242", "surface-container": "#e3efff", "on-secondary-fixed": "#00210d", "on-surface-variant": "#56423a", "primary-fixed": "#ffdbcd", "on-primary-fixed-variant": "#7d2d00", "error": "#ba1a1a", "surface-container-highest": "#d2e4f9", "surface-tint": "#9f410f", "on-tertiary-fixed-variant": "#753400", "on-primary-fixed": "#360f00", "inverse-on-surface": "#e8f2ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-lg": "1.25rem", "space-md": "0.875rem", "space-xs": "0.25rem", "margin": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "gutter": "1rem" }, fontFamily: { "headline-xl-mobile": ["Outfit"], "telemetry-xs": ["JetBrains Mono"], "telemetry-lg": ["JetBrains Mono"], "label-md": ["Outfit"], "body-sm": ["Outfit"], "headline-md": ["Outfit"], "telemetry-md": ["JetBrains Mono"], "headline-lg": ["Outfit"], "label-sm": ["Outfit"], "body-lg": ["Outfit"], "telemetry-sm": ["JetBrains Mono"], "headline-xl": ["Outfit"], "body-md": ["Outfit"], "headline-sm": ["Outfit"] }, fontSize: { "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "telemetry-xs": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "telemetry-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "telemetry-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "telemetry-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,29,44,0.04)]"><div class="h-24 px-space-md flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface uppercase">SPACEIDLE</span><span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-telemetry-xs text-telemetry-xs tracking-wider uppercase">PHASE 1: ASTEROID</span></div><div class="flex items-center gap-space-sm"><button aria-label="Overflow menu" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">more_vert</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-dim" src="https://lh3.googleusercontent.com/aida/AEtjO1X0be_m8cndFwnNmKUHR2jhH5PZk94GuKmfUPlb9Dk4RG9iFsTDFXMnSwqVf68aBqKlfL5Fx5tkvFk4Elb7ukHNVxqOJv0XnjOm4EKhlOQhahMQPbmh0yCVi7DKOgp0u7B6FpbCdhfuQQXCN2wIq7CmTzyJ4-NAniD7nMOp1JziCj6C39UB3c3DzsJtGRi0Tnn09z3PchFXnmqnaFfKPhx8_eR5nWlCaydFFqtS6s-pp_nhrm2Lohc1EQ4"/></div></div><div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 rounded"><div class="flex items-center gap-space-xs font-telemetry-xs text-telemetry-xs text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span>T+14d 06:42:18</span></div><div class="flex items-center gap-space-xs font-telemetry-xs text-telemetry-xs text-on-surface"><span class="font-semibold">142.85 t</span><span class="text-secondary font-medium">+18.4 kg/s</span></div></div></div></header><main class="flex flex-col relative w-full pt-24 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-md py-space-md gap-space-lg">
+<!-- TOP CONSOLE: Survey Radar Sweep Instrumentation -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Header telemetry bar -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-low border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-telemetry-xs text-telemetry-xs tracking-wider uppercase text-on-surface-variant font-semibold">DEEP SPACE RADAR · SCAN CYCLE ACTIVE</span>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-bold px-space-xs py-0.5 rounded bg-secondary-container/50">LV 3 RADAR</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Radar visualization row with Sweep Dial & Timing -->
+<div class="flex items-center gap-space-md">
+<!-- SVG Radar Scanner Visual -->
+<div class="relative w-20 h-20 flex-shrink-0 flex items-center justify-center bg-surface-container-low rounded-xl overflow-hidden shadow-inner">
+<svg class="w-full h-full p-1" viewbox="0 0 100 100">
+<!-- Concentric range markers -->
+<circle cx="50" cy="50" fill="none" r="42" stroke="#cadcf1" stroke-dasharray="2 2" stroke-width="1"></circle>
+<circle cx="50" cy="50" fill="none" r="28" stroke="#cadcf1" stroke-width="1"></circle>
+<circle cx="50" cy="50" fill="none" r="14" stroke="#cadcf1" stroke-width="1"></circle>
+<line stroke="#cadcf1" stroke-width="0.8" x1="50" x2="50" y1="6" y2="94"></line>
+<line stroke="#cadcf1" stroke-width="0.8" x1="6" x2="94" y1="50" y2="50"></line>
+<!-- Target blip signals -->
+<circle class="fill-primary animate-pulse" cx="34" cy="28" r="2.5"></circle>
+<circle class="fill-secondary" cx="68" cy="62" r="2"></circle>
+<circle class="fill-on-surface-variant" cx="72" cy="36" r="1.5"></circle>
+<!-- Sweeping conical beam -->
+<g class="origin-center animate-[spin_4s_linear_infinite]">
+<path d="M50 50 L50 8 A42 42 0 0 1 82 24 Z" fill="url(#radarSweepGrad)" opacity="0.4"></path>
+<line stroke="#9c3f0d" stroke-linecap="round" stroke-width="1.5" x1="50" x2="82" y1="50" y2="24"></line>
+</g>
+<defs>
+<lineargradient id="radarSweepGrad" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#9c3f0d" stop-opacity="0"></stop>
+<stop offset="100%" stop-color="#9c3f0d" stop-opacity="0.8"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="absolute bottom-1 right-1 px-1 rounded bg-surface-container font-telemetry-xs text-[9px] text-on-surface-variant font-mono">3.2 AU</div>
+</div>
+<!-- Telemetry Sweep Details -->
+<div class="flex flex-col flex-1 min-w-0 justify-between gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Cis-Belt Orbital Sweep</span>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">2m 30s cycle</span>
+</div>
+<div class="font-telemetry-lg text-telemetry-lg text-primary font-bold tracking-tight">
+            00:48 <span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant font-normal">REMAINING</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Next asteroid orbital calculation incoming</p>
+</div>
+</div>
+<!-- Linear telemetry progress track -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span>Sweep Synchronizing [Phase 3/4]</span>
+<span class="text-primary font-semibold">68%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-primary rounded-full transition-all duration-500" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Search Spectral Targeting Selector -->
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">Spectrometry Target Filter</span>
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-medium">Auto-lock active</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar">
+<!-- Active Target -->
+<button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-sm">water_drop</span>
+<span>Target: Water Ice</span>
+<span class="font-telemetry-xs text-[10px] bg-on-primary/20 px-1 py-0.2 rounded font-normal">≥5% Fix</span>
+</button>
+<!-- Locked Targets -->
+<div class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-telemetry-xs text-telemetry-xs flex-shrink-0 opacity-70">
+<span class="material-symbols-outlined text-xs">lock</span>
+<span>Titanium (Lv 4)</span>
+</div>
+<div class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-telemetry-xs text-telemetry-xs flex-shrink-0 opacity-70">
+<span class="material-symbols-outlined text-xs">lock</span>
+<span>Platinum (Lv 5)</span>
+</div>
+<div class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-telemetry-xs text-telemetry-xs flex-shrink-0 opacity-70">
+<span class="material-symbols-outlined text-xs">lock</span>
+<span>Uranium (Lv 6)</span>
+</div>
+</div>
+</div>
+<!-- Two-Line Action Upgrade Buttons -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Upgrade Radar Button -->
+<button class="flex flex-col items-start justify-center px-space-md py-space-sm bg-primary text-on-primary rounded-lg shadow-md active:scale-[0.98] transition-transform text-left">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-md text-label-md font-semibold">Upgrade Survey Array</span>
+<span class="font-telemetry-xs text-telemetry-xs bg-on-primary/20 px-1.5 py-0.5 rounded uppercase">Lv 3 → Lv 4</span>
+</div>
+<div class="font-telemetry-xs text-telemetry-xs text-primary-fixed mt-0.5 flex items-center gap-1">
+<span>Cost: 1.80 t Fe · 450 kg Ni</span>
+<span class="opacity-75">| -30s cycle</span>
+</div>
+</button>
+<!-- Expand Capacity Button -->
+<button class="flex flex-col items-start justify-center px-space-md py-space-sm bg-surface-container-high hover:bg-surface-dim text-on-surface rounded-lg shadow-sm active:scale-[0.98] transition-transform text-left">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-md text-label-md font-semibold">Expand Queue Rack</span>
+<span class="font-telemetry-xs text-telemetry-xs bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded uppercase">5 → 6 slots</span>
+</div>
+<div class="font-telemetry-xs text-telemetry-xs text-on-surface-variant mt-0.5 flex items-center gap-1">
+<span>Cost: 2.50 t Silicate · 800 kg Fe</span>
+<span class="text-secondary font-medium">+1 slot</span>
+</div>
+</button>
+</div>
+</div>
+</section>
+<!-- QUEUE SECTION: Interactive Asteroid Queue -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">view_list</span>
+<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface tracking-tight">Active Buffer Queue</h2>
+</div>
+<div class="flex items-center gap-1.5 font-telemetry-xs text-telemetry-xs text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full font-medium">
+<span>Capacity:</span>
+<span class="text-primary font-bold">4 / 5 Slots</span>
+</div>
+</div>
+<!-- CARD 1: Active Mining Target -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-md p-space-md gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">2048-XQ4 'Elora'</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-telemetry-xs text-telemetry-xs uppercase">C-Type</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Class: Medium Carbonaceous Body · Trajectory Delta-V: 120 m/s</span>
+</div>
+<span class="flex items-center gap-1 px-2 py-1 rounded bg-secondary-container text-on-secondary-container font-telemetry-xs text-telemetry-xs font-bold whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+          MINING NOW
+        </span>
+</div>
+<!-- Depletion Bar -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex justify-between font-telemetry-xs text-telemetry-xs">
+<span class="text-on-surface-variant">Payload Residual Extracted</span>
+<span class="font-semibold text-on-surface font-mono">68.4 t / 112.0 t (61%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 61%;"></div>
+</div>
+</div>
+<!-- Resource tags -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-telemetry-xs text-telemetry-xs text-on-surface">Silicate 64%</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-telemetry-xs text-telemetry-xs text-on-surface">Iron 22%</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-telemetry-xs text-telemetry-xs text-primary font-semibold">Water ice 14%</span>
+<span class="ml-auto font-telemetry-xs text-telemetry-xs text-secondary font-mono">+12.4 kg/s Yield</span>
+</div>
+</div>
+<!-- CARD 2: Queued #1 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm p-space-md gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab text-base">drag_indicator</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Asteroid 1999-JU3</span>
+<span class="font-telemetry-xs text-telemetry-xs px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant uppercase">S-Type</span>
+</div>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant font-mono">Slot #1 · Mass: 24.5 t</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant py-1">
+<div class="flex items-center gap-2 font-telemetry-xs text-telemetry-xs">
+<span>Composition: Silicate 58% · Fe 42%</span>
+<span class="text-secondary font-medium">Hazard: 1.0× Nominal</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container-low">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">Est. Processing: 18m 20s</span>
+<div class="flex items-center gap-1.5">
+<button class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container-high hover:bg-surface-dim text-primary font-label-sm text-label-sm font-semibold transition-colors">
+<span class="material-symbols-outlined text-sm">north</span>
+<span>Mine Next</span>
+</button>
+<button class="p-1 rounded hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" title="Discard Rock">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Queued #2 High Volatiles -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm p-space-md gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab text-base">drag_indicator</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Comet Fragment C-88</span>
+<span class="font-telemetry-xs text-telemetry-xs px-1.5 py-0.5 rounded bg-primary-container/20 text-primary uppercase font-bold">Volatile Rich</span>
+</div>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant font-mono">Slot #2 · Mass: 18.2 t</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant py-1">
+<div class="flex items-center gap-2 font-telemetry-xs text-telemetry-xs">
+<span class="text-primary font-medium">Water Ice 18%</span>
+<span>Silicate 72%</span>
+<span>Ni 10%</span>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-tertiary font-medium">Hazard: 1.8×</span>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container-low">
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">Est. Processing: 14m 10s</span>
+<div class="flex items-center gap-1.5">
+<button class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container-high hover:bg-surface-dim text-primary font-label-sm text-label-sm font-semibold transition-colors">
+<span class="material-symbols-outlined text-sm">north</span>
+<span>Mine Next</span>
+</button>
+<button class="p-1 rounded hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" title="Discard Rock">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Queued #3 Danger / Uranium Warning -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm p-space-md gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab text-base">drag_indicator</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Uranium-Bearing Shard U-02</span>
+<span class="font-telemetry-xs text-telemetry-xs px-1.5 py-0.5 rounded bg-error-container text-on-error-container uppercase font-bold">Radioactive</span>
+</div>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant font-mono">Slot #3 · Mass: 6.4 t</span>
+</div>
+<!-- Warning Banner Inside Card -->
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-error-container text-on-error-container font-telemetry-xs text-telemetry-xs my-0.5 font-medium">
+<span class="material-symbols-outlined text-sm">warning</span>
+<span>High Drone Attrition Risk: Hazard 3.6× (Mean Time To Fail: 14m)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant py-0.5">
+<div class="flex items-center gap-2 font-telemetry-xs text-telemetry-xs">
+<span>Silicate 70%</span>
+<span>Fe 18%</span>
+<span class="text-error font-bold">Uranium 12%</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container-low">
+<span class="font-telemetry-xs text-telemetry-xs text-error font-mono">Requires Lv 6 Drone Shielding</span>
+<div class="flex items-center gap-1.5">
+<button class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container-high hover:bg-surface-dim text-primary font-label-sm text-label-sm font-semibold transition-colors">
+<span class="material-symbols-outlined text-sm">north</span>
+<span>Mine Next</span>
+</button>
+<button class="p-1 rounded hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" title="Discard Rock">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 5: Empty Slot State -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low/70 border-2 border-dashed border-surface-dim">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">radar</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Slot #4 Empty</span>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant">Survey scan cycle will deposit next identified asteroid here</span>
+</div>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-primary font-mono uppercase bg-surface-container px-2 py-1 rounded">Awaiting Fix</span>
+</div>
+</section>
+<!-- RESOURCE ASSAY CATALOG: Read-Only Reference Specification -->
+<section class="flex flex-col gap-space-sm bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">science</span>
+<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Resource Assay Catalog</h2>
+</div>
+<span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant font-mono">10 Elements Cataloged</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Solar system cis-lunar distribution matrix &amp; extraction profiles</p>
+</div>
+<!-- Filter Buttons Horizontal Run -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar text-on-surface">
+<button class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex-shrink-0">All (10)</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-dim text-on-surface-variant font-label-sm text-label-sm flex-shrink-0 font-medium">Silicates</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-dim text-on-surface-variant font-label-sm text-label-sm flex-shrink-0 font-medium">Metals</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-dim text-on-surface-variant font-label-sm text-label-sm flex-shrink-0 font-medium">Volatiles</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-dim text-on-surface-variant font-label-sm text-label-sm flex-shrink-0 font-medium">Precious</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-dim text-on-surface-variant font-label-sm text-label-sm flex-shrink-0 font-medium">Radioactive</button>
+</div>
+<!-- The 10 Resources Table / Cards Grid -->
+<div class="flex flex-col gap-2">
+<!-- 1. Silicate rock -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-dim flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold text-on-surface">Si</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Silicate Rock</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-secondary font-medium">Common</span> · <span>Detect Lv 1</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-telemetry-md text-telemetry-md font-bold text-on-surface">84.20 t</span>
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-medium">Targetable</span>
+</div>
+</div>
+<!-- 2. Iron -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-dim flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold text-on-surface">Fe</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Iron</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-secondary font-medium">Common</span> · <span>Detect Lv 1</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-telemetry-md text-telemetry-md font-bold text-on-surface">41.30 t</span>
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-medium">Targetable</span>
+</div>
+</div>
+<!-- 3. Nickel -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-dim flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold text-on-surface">Ni</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Nickel</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-primary font-medium">Uncommon</span> · <span>Detect Lv 2</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-telemetry-md text-telemetry-md font-bold text-on-surface">14.85 t</span>
+<span class="font-telemetry-xs text-telemetry-xs text-secondary font-medium">Targetable</span>
+</div>
+</div>
+<!-- 4. Water Ice -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low border border-primary/20">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold">H₂O</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Water Ice</span>
+<span class="px-1 rounded bg-primary text-on-primary font-telemetry-xs text-[9px] uppercase font-bold">Active</span>
+</div>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-primary font-medium">Uncommon</span> · <span>Detect Lv 2</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-telemetry-md text-telemetry-md font-bold text-on-surface">2.50 t</span>
+<span class="font-telemetry-xs text-telemetry-xs text-primary font-bold">Locked Focus</span>
+</div>
+</div>
+<!-- 5. Titanium -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60 opacity-85">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold text-on-surface-variant">Ti</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant truncate">Titanium</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-tertiary font-medium">Rare</span> · <span>Detect Lv 4 Required</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-telemetry-xs text-telemetry-xs">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Locked</span>
+</div>
+</div>
+<!-- 6. Copper -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60 opacity-85">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold text-on-surface-variant">Cu</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant truncate">Copper</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-tertiary font-medium">Rare</span> · <span>Detect Lv 4 Required</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-telemetry-xs text-telemetry-xs">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Locked</span>
+</div>
+</div>
+<!-- 7. Platinum -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60 opacity-75">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold text-on-surface-variant">Pt</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant truncate">Platinum</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-tertiary font-medium">Exotic</span> · <span>Survey Lv 5 Required</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-telemetry-xs text-telemetry-xs">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Locked</span>
+</div>
+</div>
+<!-- 8. Gold -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60 opacity-75">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold text-on-surface-variant">Au</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant truncate">Gold</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-tertiary font-medium">Exotic</span> · <span>Survey Lv 5 Required</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-telemetry-xs text-telemetry-xs">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Locked</span>
+</div>
+</div>
+<!-- 9. Uranium -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60 opacity-75">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-error-container text-on-error-container flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold">U</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant truncate">Uranium</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-error">
+<span>Hazardous</span> · <span>Drone explosion risk</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<div class="flex items-center gap-1 text-error font-telemetry-xs text-telemetry-xs font-semibold">
+<span class="material-symbols-outlined text-sm">swipe_vertical</span>
+<span>Lv 6 Req</span>
+</div>
+</div>
+</div>
+<!-- 10. Helium-3 -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container/60 opacity-75">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center font-telemetry-sm text-telemetry-sm font-bold text-on-surface-variant">³He</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant truncate">Helium-3</span>
+<div class="flex items-center gap-1 font-telemetry-xs text-telemetry-xs text-on-surface-variant">
+<span class="text-tertiary font-medium">Exotic</span> · <span>Terraforming precursor</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-telemetry-xs text-telemetry-xs">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Lv 7 Req</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive sweep timer tick simulation for UX delight
+  (function() {
+    let remainingSec = 48;
+    const timeDisplay = document.querySelector('.text-telemetry-lg');
+    if (!timeDisplay) return;
+
+    setInterval(() => {
+      if (remainingSec > 0) {
+        remainingSec--;
+        const m = Math.floor(remainingSec / 60);
+        const s = (remainingSec % 60).toString().padStart(2, '0');
+        timeDisplay.innerHTML = `0${m}:${s} <span class="font-telemetry-xs text-telemetry-xs text-on-surface-variant font-normal">REMAINING</span>`;
+      } else {
+        remainingSec = 150; // reset 2m 30s cycle
+      }
+    }, 1000);
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,29,44,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="command-deck" href="#"><span class="material-symbols-outlined">token</span><span class="font-label-sm text-label-sm uppercase">Deck</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-primary font-semibold" data-path="survey-operations" href="#"><span class="material-symbols-outlined">radar</span><span class="font-label-sm text-label-sm uppercase">Survey</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="fleet-fabrication" href="#"><span class="material-symbols-outlined">precision_manufacturing</span><span class="font-label-sm text-label-sm uppercase">Fleet</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="terraform-satellite" href="#"><span class="material-symbols-outlined">globe_uk</span><span class="font-label-sm text-label-sm uppercase">Terraform</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="faction-allegiance" href="#"><span class="material-symbols-outlined">shield_with_heart</span><span class="font-label-sm text-label-sm uppercase">Faction</span></a></div></nav></body></html>
